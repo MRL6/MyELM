@@ -395,6 +395,7 @@ public class MainActivity extends AppCompatActivity implements DataCall{
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //调用一下
         new RequestPresenter(this).unBindCall();
     }
 }
